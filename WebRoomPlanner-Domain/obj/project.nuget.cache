@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Z2hFCtbAB8E9X1Lw6w8vo1avLy/nAJ1bs6IoMu/YWb3PfFiBY0Wbe/8ztcVEg4sIhntz+kPjf5+l2alGuAFpw==",
+  "success": true,
+  "projectFilePath": "/home/wiszowaty/Projekty/dotnet+react/02-RoomPlanner/API-Proj/WebRoomPlanner/WebRoomPlanner-Domain/WebRoomPlanner-Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/wiszowaty/.nuget/packages/mongodb.bson/2.15.0/mongodb.bson.2.15.0.nupkg.sha512",
+    "/home/wiszowaty/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

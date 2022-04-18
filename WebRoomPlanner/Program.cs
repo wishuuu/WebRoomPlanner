@@ -1,6 +1,19 @@
+using Microsoft.Extensions.Options;
+using WebRoomPlanner_Perception;
+using WebRoomPlanner_Perception.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<DatabaseSettings>(
+    builder.Configuration.GetSection("DatabaseSettings"));
+
+builder.Services.AddSingleton<IDatabaseSettings>(sp =>
+    sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
+
+builder.Services.AddOptions();
+
+builder.Services.AddSingleton<BaseFurnitureObjectService>();
 
 builder.Services.AddControllersWithViews();
 
@@ -17,6 +30,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyHeader()
+    .AllowAnyMethod());
 
 app.MapControllerRoute(
     name: "default",

@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRoomPlanner", "WebRoomPlanner\WebRoomPlanner.csproj", "{4C89E6D9-1D2A-4144-B3EB-B3103C7A0F52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRoomPlanner-Domain", "WebRoomPlanner-Domain\WebRoomPlanner-Domain.csproj", "{15C0E491-DD19-4C72-B2CD-5FAF6ABE8EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRoomPlanner-Perception", "WebRoomPlanner-Perception\WebRoomPlanner-Perception.csproj", "{179D576B-03F2-4864-AD38-256DB5654E6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRoomPlanner-Application", "WebRoomPlanner-Application\WebRoomPlanner-Application.csproj", "{173ECF45-F17D-4D5C-A3EA-469540D770A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{4C89E6D9-1D2A-4144-B3EB-B3103C7A0F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C89E6D9-1D2A-4144-B3EB-B3103C7A0F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C89E6D9-1D2A-4144-B3EB-B3103C7A0F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C0E491-DD19-4C72-B2CD-5FAF6ABE8EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C0E491-DD19-4C72-B2CD-5FAF6ABE8EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C0E491-DD19-4C72-B2CD-5FAF6ABE8EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C0E491-DD19-4C72-B2CD-5FAF6ABE8EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{179D576B-03F2-4864-AD38-256DB5654E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{179D576B-03F2-4864-AD38-256DB5654E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{179D576B-03F2-4864-AD38-256DB5654E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{179D576B-03F2-4864-AD38-256DB5654E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173ECF45-F17D-4D5C-A3EA-469540D770A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173ECF45-F17D-4D5C-A3EA-469540D770A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173ECF45-F17D-4D5C-A3EA-469540D770A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173ECF45-F17D-4D5C-A3EA-469540D770A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
