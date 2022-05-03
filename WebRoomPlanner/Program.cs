@@ -14,6 +14,8 @@ builder.Services.AddSingleton<IDatabaseSettings>(sp =>
 builder.Services.AddOptions();
 
 builder.Services.AddSingleton<BaseFurnitureObjectService>();
+builder.Services.AddSingleton<RoomsService>();
+builder.Services.AddSingleton<UserService>();
 
 builder.Services.AddControllersWithViews();
 

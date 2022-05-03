@@ -30,4 +30,42 @@ public class BaseFurnitureObjectService
             return 1;
         }
     }
+
+    public async Task<List<FurnitureObjectBase>> getObjects()
+    {
+        return (await _objects.FindAsync(_ => true)).ToList();
+    }
+
+    public async Task<FurnitureObjectBase> getObject(int id)
+    {
+        try
+        {
+            return (await _objects.FindAsync(o => o.id == id)).First();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    public async Task<List<FurnitureObjectBase>> getByType(BaseFurnitureObjectType type)
+    {
+        return (await _objects.FindAsync(o => o.objectType == type)).ToList();
+    }
+
+    public async Task<FurnitureObjectBase> insertObject(FurnitureObjectBase objectBase)
+    {
+        try
+        {
+            objectBase.id = GetNextId();
+            await _objects.InsertOneAsync(objectBase);
+            return objectBase;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
 }
